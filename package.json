@@ -1,0 +1,23 @@
+{
+  "name": "biblioteca",
+  "version": "1.0.0",
+  "description": "API para gestionar una biblioteca, incluyendo bibliotecarios, personas, libros y préstamos.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
