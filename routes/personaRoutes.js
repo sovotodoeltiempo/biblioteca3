@@ -1,22 +1,22 @@
-// routes/prestamoRoutes.js
+// routes/personaRoutes.js
 
 const express = require('express');
 const router = express.Router();
-const prestamoController = require('../controllers/prestamoController');
+const personaController = require('../controllers/personaController');
 
 // Ruta para obtener todos los préstamos
-router.get('/', prestamoController.getAllPrestamos);
+router.get('/', personaController.getAllPersonas);
 
 // Ruta para obtener un préstamo por su id
-router.get('/:id', prestamoController.getPrestamoById);
+router.get('/:id', personaController.getPersonaById);
 
-// Ruta para crear un nuevo préstamo
-router.post('/', prestamoController.createPrestamo);
+// Ruta para crear una nueva persona
+router.post('/', personaController.createPersona);
 
-// Ruta para actualizar un préstamo existente
-router.put('/:id', prestamoController.updatePrestamo);
+// Ruta para actualizar una persona existente
+router.put('/:id', personaController.updatePersona);
 
 // Ruta para eliminar un préstamo
-router.delete('/:id', prestamoController.deletePrestamo);
+router.delete('/:id', personaController.deletePersona);
 
 module.exports = router;
